@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Evento Slide</title>
+
+  <script src="./jquery-3.6.1.min.js"></script>
+
+  <script>
+
+    //ao carregar o documento
+    $(document).ready(function(){
+
+    //ocultar
+    $(".ocultar").click(function(){
+      $(".mensagem").slideUp();
+
+    })
+
+    //exibir
+    $(".exibir").click(function(){
+      $(".mensagem").slideDown();
+
+    })
+
+    })
+  </script>
+
+
+
+</head>
+<body>
+  
+  <h1 class="exibir">Exibir</h1>
+  <h1 class="ocultar">Ocultar</h1>
+
+  <h1 class="mensagem"> Ola!</h1>
+
+</body>
+</html>

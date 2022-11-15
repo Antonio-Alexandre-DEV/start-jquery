@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Evento no jQuery</title>
+
+  <script src="./jquery-3.6.1.min.js"></script>
+
+  <script>
+
+    //ao carregar o documento
+    $(document).ready(function(){
+
+    //evento click
+      $("button").click(function(){
+
+    //adc um texto no h1
+      $("h1").html("Vc criou em evento click com jquery")
+
+      })
+
+    })
+    
+
+  </script>
+
+
+
+</head>
+<body>
+
+  <h1></h1>
+  <button>Clique aqui</button>
+
+</body>
+</html>

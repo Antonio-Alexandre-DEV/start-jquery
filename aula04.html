@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Efeito Fade para exibir ou ocultar elementos</title>
+
+  <script src="./jquery-3.6.1.min.js"></script>
+
+  <script>
+    //ao carregar o documento
+    $(document).ready(function(){
+
+      //ocultar h1
+      $("h1").css("display", "none"); //display none retira o elemento do layout da pagina
+
+      //exibir h1
+      $("#exibir").click(function(){
+        $("h1").fadeIn();
+
+      });
+
+      //ocultar h1
+      $("#ocultar").click(function(){
+        $("h1").fadeOut();
+
+      });
+
+    })
+
+
+
+  </script>
+
+
+
+</head>
+<body>
+
+  <button id="exibir">Exibir</button>
+  <button id="ocultar">Ocultar</button>
+  <br>
+  <h1>Aprendendo o jQuery</h1>
+  
+</body>
+</html>

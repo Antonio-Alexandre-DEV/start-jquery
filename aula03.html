@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+
+  <script src="./jquery-3.6.1.min.js"></script>
+
+  <script>
+
+    //ao carregar o documento
+    $(document).ready(function(){
+
+    //exibir
+    $("#exibir").click(function(){
+    $("img").show();
+
+    //ocultar
+    $("#ocultar").click(function(){
+    $("img").hide();
+
+    })
+  })
+})
+  </script>
+  
+  <title>Exibir e ocultar conteudo</title>
+</head>
+<body>
+  
+  <button id="exibir">Exibir</button>
+  <button id="ocultar">Ocultar</button>
+  <br>
+  <img src="./iconcoracao.png">
+
+</body>
+
+  
+</html>
